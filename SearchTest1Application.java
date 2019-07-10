@@ -1,3 +1,4 @@
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -15,10 +16,15 @@ public class SearchTest1Application {
 
     public static void main(String[] args) throws Exception {
         // create a Chrome Web Driver
-        URL local = new URL("http://localhost:9515");
-        WebDriver driver = new RemoteWebDriver(local, DesiredCapabilities.chrome());
+        // URL local = new URL("http://localhost:9515");
+        //WebDriver driver = new RemoteWebDriver(local, DesiredCapabilities.chrome());
+        System.setProperty("webdriver.gecko.driver","C:\\Program Files\\geckodriver-v0.24.0-win64\\geckodriver.exe");
+        System.setProperty("webdriver.chrome.driver","C:\\Program Files\\chromedriver_win32\\chromedriver.exe");
+        //FirefoxDriver driver=new FirefoxDriver();
+        ChromeDriver driver=new ChromeDriver();
 
-       // open the browser and go to open google.com
+
+        // open the browser and go to open google.com
         driver.get("https://www.google.com");
 
         driver.findElement(By.id("lst-ib")).sendKeys("Selenium");
