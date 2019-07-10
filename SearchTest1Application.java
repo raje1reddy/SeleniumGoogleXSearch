@@ -21,7 +21,7 @@ public class SearchTest1Application {
         System.setProperty("webdriver.gecko.driver","C:\\Program Files\\geckodriver-v0.24.0-win64\\geckodriver.exe");
         System.setProperty("webdriver.chrome.driver","C:\\Program Files\\chromedriver_win32\\chromedriver.exe");
         //FirefoxDriver driver=new FirefoxDriver();
-        ChromeDriver driver=new ChromeDriver();
+        WebDriver driver=new ChromeDriver();
 
 
         // open the browser and go to open google.com
