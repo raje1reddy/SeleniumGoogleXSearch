@@ -37,7 +37,7 @@
             <artifactId>jbehave-web-selenium-flash-archetype</artifactId>
             <version>3.5.2</version>
         </dependency>
-    </dependency>
+<!--    </dependency>-->
     <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
     <dependency>
         <groupId>org.seleniumhq.selenium</groupId>
